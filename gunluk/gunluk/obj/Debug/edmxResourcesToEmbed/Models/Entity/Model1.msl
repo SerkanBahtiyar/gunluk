@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="gunlukModelStoreContainer" CdmEntityContainer="gunlukEntities">
+    <EntitySetMapping Name="gun">
+      <EntityTypeMapping TypeName="gunlukModel.gun">
+        <MappingFragment StoreEntitySet="gun">
+          <ScalarProperty Name="tecrübe" ColumnName="tecrübe" />
+          <ScalarProperty Name="bilgi" ColumnName="bilgi" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="tarih" ColumnName="tarih" />
+          <ScalarProperty Name="gunlukMesajı" ColumnName="gunlukMesajı" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

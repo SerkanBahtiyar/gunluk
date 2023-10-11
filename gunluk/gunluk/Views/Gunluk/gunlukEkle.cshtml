@@ -1,0 +1,99 @@
+﻿﻿@model gunluk.Models.Entity.gun
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Günlüğüm</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: cornflowerblue;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 400px;
+            background-color: #fff;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        textarea {
+            height: 150px; /* Burada metin kutusunun yüksekliğini ayarlayabilirsiniz. */
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+            button:hover {
+                background-color: #0056b3;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Günlüğüm</h2>
+        <form method="post">
+            <div class="form-group">
+                <label for="name">Tarih:</label>
+                <input type="text" id="name" name="tarih" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Günlüğünüz:</label>
+                <textarea id="message" name="gunlukMesajı" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="message">bilgi:</label>
+                <textarea id="message" name="bilgi" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="message">tecrübe:</label>
+                <textarea id="message" name="tecrübe" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Gönder</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

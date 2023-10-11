@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="gunlukModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="gun">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tarih" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="gunlukMesajı" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
+    <Property Name="bilgi" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+    <Property Name="tecrübe" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="gunlukEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="gun" EntityType="Self.gun" />
+  </EntityContainer>
+</Schema>
